@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WaiterComponent } from './waiter.component';
+import { MesasInitComponent } from './mesas-init.component';
 
-describe('WaiterComponent', () => {
-  let component: WaiterComponent;
-  let fixture: ComponentFixture<WaiterComponent>;
+describe('MesasInitComponent', () => {
+  let component: MesasInitComponent;
+  let fixture: ComponentFixture<MesasInitComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WaiterComponent ]
+      declarations: [ MesasInitComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WaiterComponent);
+    fixture = TestBed.createComponent(MesasInitComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

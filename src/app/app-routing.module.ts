@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { WaiterComponent } from './components/waiter/waiter.component';
-import { ChefComponent } from './components/chef/chef.component';
-
+import { CocinaInitComponent } from './cocina-init/cocina-init.component';
+import { MesasInitComponent } from './mesas-init/mesas-init.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'waiter', component: WaiterComponent},
-  { path: 'chef', component: ChefComponent},
-];
+{
+  path:'',
+  pathMatch:'full',
+  redirectTo:'home'
+},
+   //preguntar por los children here
+  { path: 'home', component: HomeComponent},
+  { path: 'mesas', component: MesasInitComponent },  
+  { path: 'cocina', component: CocinaInitComponent},
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
