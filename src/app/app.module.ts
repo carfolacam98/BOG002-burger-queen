@@ -5,15 +5,14 @@ import { AppComponent } from './app.component';
 import { CocinaInitComponent } from './cocina-init/cocina-init.component';
 import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
-import { PruebaComponent } from './prueba/prueba.component';
+
 
 @NgModule({
   declarations: [
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent, PruebaComponent 
-   
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
