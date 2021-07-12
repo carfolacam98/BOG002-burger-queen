@@ -1,0 +1,16 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 0.5em;
+    height: 100%;
+}
+
+.items {
+    background-color: tomato;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-gap: 0.5em;
+}
