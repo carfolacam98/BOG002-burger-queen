@@ -3,18 +3,27 @@ import { RouterModule, Routes } from '@angular/router';
 import { CocinaInitComponent } from './cocina-init/cocina-init.component';
 import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
-
+import { PruebaComponent } from './prueba/prueba.component';
 const routes: Routes = [
+   {
+     path:'',
+     pathMatch:'full',
+redirectTo:'home'
+   },
    
-   
-   //preguntar por el redirect aqui
+   //preguntar por los children here
    {path: 'home', component: HomeComponent,
    children: [
-    { path: 'cocina', component: CocinaInitComponent},
-    { path: 'mesas', component: MesasInitComponent },         
-  ]},
+    { path: 'mesas', component: MesasInitComponent },  
+    { path: 'cocina', component: CocinaInitComponent,
+    children: [
+      {
+        path: 'prueba',
+        component: PruebaComponent
+      }  ]
+},
   
-];
+]}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

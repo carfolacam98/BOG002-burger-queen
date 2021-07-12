@@ -1,7 +1,14 @@
-<div class=container>
-<div id='up'>Title</div>
-<div id='down'>
-<div> <button [routerLink]="'mesas'"> Mesas</button></div>
-<div> <button [routerLink]="'cocina'"> Cocina</button><div> </div>
+
+<div *ngIf="home.children.length === 0">
+    <div class=container>
+        
+        <div id='up'><div id='upimg'><img src="assets/img/queen.jpeg" width="100%" height="100%" ></div></div>
+        <div id='down'>
+        <div> <button [routerLink]="'mesas'"> Mesas</button></div>
+        <div> <button [routerLink]="'cocina'"> Cocina</button> </div>
+     
+        </div>
+  </div>
 </div>
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+  
