@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CocinaInitComponent } from './cocina-init/cocina-init.component';
 import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 
 // comentario
 @NgModule({
@@ -12,7 +13,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent,
+    HomeComponent, HeaderComponent,
   ],
   imports: [
     BrowserModule,
