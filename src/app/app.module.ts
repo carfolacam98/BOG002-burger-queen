@@ -6,7 +6,7 @@ import { CocinaInitComponent } from './cocina-init/cocina-init.component';
 import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
 
-
+// comentario
 @NgModule({
   declarations: [
     AppComponent, 
