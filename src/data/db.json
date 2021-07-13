@@ -1,0 +1,26 @@
+{
+    "Desayunos": [
+        [
+            { "nombre": "Café americano", "img": "ruta", "precio": 5 },
+            { "nombre": "Café con leche", "img": "ruta", "precio": 7 },
+            { "nombre": "Sandwich de jamón y queso", "img": "ruta", "precio": 10 },
+            { "nombre": "Jugo de frutas natural", "img": "ruta", "precio": 7 }
+        ]
+    ],
+    "Hamburguesas": [
+        [{
+            "Tipo": [{ "nombre": "Vegetariana", "img": "ruta", "precio": 10 },
+                { "nombre": "Res", "img": "ruta", "precio": 10 },
+                { "nombre": "Pollo", "img": "ruta", "precio": 10 }
+            ]
+        }]
+    ],
+    "Bebidas": [
+        [
+            { "nombre": "Agua 500ml", "img": "ruta", "precio": 5 },
+            { "nombre": "Agua 750ml", "img": "ruta", "precio": 7 },
+            { "nombre": "Bebida/gaseosa 500ml", "img": "ruta", "precio": 7 },
+            { "nombre": "Bebida/gaseosa 750ml", "img": "ruta", "precio": 10 }
+        ]
+    ]
+}
