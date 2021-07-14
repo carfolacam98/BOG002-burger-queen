@@ -7,7 +7,7 @@ import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
-
+import { HttpClientModule } from '@angular/common/http';
 // comentario
 @NgModule({
   declarations: [
