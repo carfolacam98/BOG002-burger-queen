@@ -7,8 +7,8 @@ import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
-import { HttpClient } from '@angular/common/http';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // comentario
 @NgModule({
@@ -21,7 +21,7 @@ import { BreakfastComponent } from './components/breakfast/breakfast.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpClientModule
     
   ],
   providers: [],

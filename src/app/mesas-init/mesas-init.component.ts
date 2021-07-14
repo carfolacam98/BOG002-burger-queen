@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-mesas-init',
   templateUrl: './mesas-init.component.html',

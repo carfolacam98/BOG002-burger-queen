@@ -1,14 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-export class Breakfast {
-  constructor(
-    public name: string,
-    public img: string,
-    public precio: number,
-    ) {
-  }
-}
+import { BackendService } from 'src/app/backend.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-breakfast',
@@ -18,21 +10,14 @@ export class Breakfast {
 
 export class BreakfastComponent implements OnInit {
   
-  breakfast: Breakfast[] = [];
+  breakfast: any = {};
   
-  constructor(private http:HttpClient) { }
+  constructor(private http:BackendService) { }
 
   ngOnInit(): void {
-    this.getBreakfast()
-  }
-
-  getBreakfast = () => {
-    this.http.get<any>('http://localhost:3000/Desayunos').subscribe(
-      response => {
-        console.log(response);
+    this.http.getBreakfast().subscribe(response => {
+      console.log(response);
         this.breakfast = response;
-      }
-    );
+    } )
   }
-
 }
