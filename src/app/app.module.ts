@@ -7,6 +7,8 @@ import { MesasInitComponent } from './mesas-init/mesas-init.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HttpClient } from '@angular/common/http';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
 
 // comentario
 @NgModule({
@@ -14,11 +16,13 @@ import { NavComponent } from './components/nav/nav.component';
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent, HeaderComponent, NavComponent,
+    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClient
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
