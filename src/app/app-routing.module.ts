@@ -13,7 +13,9 @@ const routes: Routes = [
 },
    //preguntar por los children here
   { path: 'home', component: HomeComponent},
-  { path: 'mesas', component: MesasInitComponent },  
+  { path: 'mesas', component: MesasInitComponent, children:[
+    { path: 'breakfast', component: BreakfastComponent}
+  ] },  
   { path: 'cocina', component: CocinaInitComponent},
   { path: 'menu', component: BreakfastComponent},
 ]
