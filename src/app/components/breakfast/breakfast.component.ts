@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from 'src/app/backend.service';
-import { Observable } from 'rxjs';
+//import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-breakfast',
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 export class BreakfastComponent implements OnInit {
   
-  breakfast: any = {};
+  breakfast: any = [];
   
   constructor(private http:BackendService) { }
 
@@ -18,6 +18,26 @@ export class BreakfastComponent implements OnInit {
     this.http.getBreakfast().subscribe(response => {
       console.log(response);
         this.breakfast = response;
-    } )
+        // console.log('que es?', Object.values(this.breakfast))
+    
+    })
   }
 }
+
+//Patron de diseño : Injection de dependencias
+
+// class Carro extends Vehiculo {
+//   constructor(model, power) {
+
+//   };
+//   setColor(color){
+//   this.color= color
+//   }
+// }
+
+// let carroB = new Carro('mazda', 400)
+// carroB.setColor('amarillo')
+
+
+
+
