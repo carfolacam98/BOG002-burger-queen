@@ -1,16 +1,16 @@
 .wrapper {
     display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-gap: 0.5em;
+    grid-template-rows: 1fr 9fr;
+    grid-gap: 0.1em;
     height: 100%;
 }
 
 .items {
-    background-color: tomato;
+    background-color: #F2F2F2;
 }
 
 .wrapper2 {
     display: grid;
-    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-columns: 1fr 6fr 4fr;
     grid-gap: 0.5em;
 }

@@ -1,12 +1,5 @@
-<p>Menu</p>
-<!-- <li>
-    {{breakfast.nombre}}
-</li> -->
-
-<li *ngFor="let value of breakfast">
-    <!-- {{ breakfast[key]}} -->
-    <div>
-
-        {{breakfast.nombre}}
-    </div>
-</li>
+<p>// Desayunos</p>
+<section class="row">
+    <app-product-view *ngFor="let element of breakfast" [title]="element.nombre" [price]="element.precio" [img]="element.imagen">
+    </app-product-view>
+</section>

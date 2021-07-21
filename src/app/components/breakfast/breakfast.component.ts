@@ -18,8 +18,6 @@ export class BreakfastComponent implements OnInit {
     this.http.getBreakfast().subscribe(response => {
       console.log(response);
         this.breakfast = response;
-        // console.log('que es?', Object.values(this.breakfast))
-    
     })
   }
 }

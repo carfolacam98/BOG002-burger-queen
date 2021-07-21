@@ -1,0 +1,15 @@
+p {
+    font-size: 12px;
+    margin: 40px 0px 0px 50px;
+    color: rgb(85, 85, 85);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+section {
+    margin: 20px 30px 0px 30px
+}

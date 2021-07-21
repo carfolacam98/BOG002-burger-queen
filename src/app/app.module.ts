@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HamburguerComponent } from './components/hamburguer/hamburguer.component';
+import { DrinksComponent } from './components/drinks/drinks.component';
+import { ProductViewComponent } from './components/shared/product-view/product-view.component';
 
 // comentario
 @NgModule({
@@ -16,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent,
+    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent,
   ],
   imports: [
     BrowserModule,

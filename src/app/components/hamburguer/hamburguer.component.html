@@ -1,0 +1,5 @@
+<p>// Hamburguesas</p>
+<section class="row">
+    <app-product-view *ngFor="let element of hamburger" [title]="element.nombre" [price]="element.precio" [img]="element.imagen">
+    </app-product-view>
+</section>
