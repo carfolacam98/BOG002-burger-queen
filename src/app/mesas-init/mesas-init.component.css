@@ -6,6 +6,6 @@
 
 .wrapper2 {
     display: grid;
-    grid-template-columns: 1fr 7fr 3fr;
+    grid-template-columns: 0.8fr 8fr 3fr;
     grid-gap: 0.5em;
 }

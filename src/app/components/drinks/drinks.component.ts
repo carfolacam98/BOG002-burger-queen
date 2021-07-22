@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { BackendService } from 'src/app/backend.service';
->>>>>>> 477624f46156b8a419172dac3ba2dfe82abca06f
 
 @Component({
   selector: 'app-drinks',
@@ -10,12 +7,6 @@ import { BackendService } from 'src/app/backend.service';
   styleUrls: ['./drinks.component.css']
 })
 export class DrinksComponent implements OnInit {
-<<<<<<< HEAD
-
-  constructor() { }
-
-  ngOnInit(): void {
-=======
   drink: any = [];
   constructor(private http:BackendService) { }
 
@@ -23,7 +14,6 @@ export class DrinksComponent implements OnInit {
     this.http.getDrinks().subscribe(response => {
       this.drink = response;
     })
->>>>>>> 477624f46156b8a419172dac3ba2dfe82abca06f
   }
 
 }

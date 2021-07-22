@@ -1,6 +1,6 @@
 #card-body {
-    width: 245px;
-    height: 230px;
+    width: 90%;
+    height: 90%;
     left: 138px;
     top: 146px;
     background: #FFFFFF;
@@ -21,26 +21,26 @@
 .card-title {
     color: #6F6F6F;
     text-align: left;
-    font-size: 16px;
+    font-size: 100%;
     padding: 15px 0px 0px 24px;
     font-weight: 500;
 }
 
 .card-precio {
     text-align: left;
-    font-size: 25px;
+    font-size: 100%;
     padding: 0px 0px 0px 24px;
     font-weight: 800;
 }
 
 .redondo {
-    width: 40px;
-    height: 40px;
+    width: 70%;
+     height: 50%; 
     border-radius: 50%;
     border: 0px;
     color: white;
     background-color: black;
-    margin-top: 24px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
