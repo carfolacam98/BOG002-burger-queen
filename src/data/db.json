@@ -1,26 +1,29 @@
 {
     "Desayunos": [
-        
-            { "nombre": "Café americano", "img": "ruta", "precio": 5 },
-            { "nombre": "Café con leche", "img": "ruta", "precio": 7 },
-            { "nombre": "Sandwich de jamón y queso", "img": "ruta", "precio": 10 },
-            { "nombre": "Jugo de frutas natural", "img": "ruta", "precio": 7 }
-        
+
+        { "nombre": "Sandwich Jamón", "imagen": "../assets/img/sandwich.png", "precio": 10 },
+        { "nombre": "Huevos Gourmet", "imagen": "../assets/img/egg.png", "precio": 3 },
+        { "nombre": "Pancakes", "imagen": "../assets/img/pancakes.png", "precio": 8 },
+        { "nombre": "Café Americano", "imagen": "../assets/img/cafe.png", "precio": 5 },
+        { "nombre": "Capuccino", "imagen": "../assets/img/capucino.png", "precio": 7 }
+
+
     ],
     "Hamburguesas": [
-        
-                { "nombre": "Vegetariana", "img": "ruta", "precio": 10 },
-                { "nombre": "Res", "img": "ruta", "precio": 10 },
-                { "nombre": "Pollo", "img": "ruta", "precio": 10 }
-            
-        
+
+        { "nombre": "Res", "imagen": "../assets/img/res.png", "precio": 10 },
+        { "nombre": "Pollo", "imagen": "../assets/img/pollo.png", "precio": 10 },
+        { "nombre": "Vegetariana", "imagen": "../assets/img/veggie.png", "precio": 10 }
+
+
     ],
     "Bebidas": [
-        
-            { "nombre": "Agua 500ml", "img": "ruta", "precio": 5 },
-            { "nombre": "Agua 750ml", "img": "ruta", "precio": 7 },
-            { "nombre": "Bebida/gaseosa 500ml", "img": "ruta", "precio": 7 },
-            { "nombre": "Bebida/gaseosa 750ml", "img": "ruta", "precio": 10 }
-        
+
+        { "nombre": "Jugos Naturales", "imagen": "../assets/img/jugo.png", "precio": 6 },
+        { "nombre": "Agua 500ml", "imagen": "../assets/img/agua5.png", "precio": 5 },
+        { "nombre": "Agua 750ml", "imagen": "../assets/img/agua7.png", "precio": 7 },
+        { "nombre": "Gaseosa 500ml", "imagen": "../assets/img/soda.png", "precio": 7 },
+        { "nombre": "Gaseosa 750ml", "imagen": "../assets/img/soda.png", "precio": 10 }
+
     ]
 }

@@ -9,8 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 // import { CardsComponent } from './cards/cards.component';
 // import { DrinksComponent } from './drinks/drinks.component';
+=======
+import { HamburguerComponent } from './components/hamburguer/hamburguer.component';
+import { DrinksComponent } from './components/drinks/drinks.component';
+import { ProductViewComponent } from './components/shared/product-view/product-view.component';
+import { OrdersComponent } from './components/orders/orders.component';
+>>>>>>> 477624f46156b8a419172dac3ba2dfe82abca06f
 
 // comentario
 @NgModule({
@@ -18,9 +25,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
+<<<<<<< HEAD
     HomeComponent, HeaderComponent, NavComponent, BreakfastComponent,
     //  CardsComponent, 
     
+=======
+    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent, OrdersComponent,
+>>>>>>> 477624f46156b8a419172dac3ba2dfe82abca06f
   ],
   imports: [
     BrowserModule,
