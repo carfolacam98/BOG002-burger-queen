@@ -1,0 +1,55 @@
+#card-body {
+    width: 90%;
+    height: 90%;
+    left: 138px;
+    top: 146px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 18px;
+    margin: 0px 15px 30px 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+#card-body img {
+    width: 100%;
+}
+
+.card-title {
+    color: #6F6F6F;
+    text-align: left;
+    font-size: 100%;
+    padding: 15px 0px 0px 24px;
+    font-weight: 500;
+}
+
+.card-precio {
+    text-align: left;
+    font-size: 100%;
+    padding: 0px 0px 0px 24px;
+    font-weight: 800;
+}
+
+.redondo {
+    width: 70%;
+     height: 50%; 
+    border-radius: 50%;
+    border: 0px;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.redondo:hover {
+    background: #FFD800;
+    color: black;
+}
+
+.add {
+    font-size: 40px;
+    line-height: 40px;
+}
