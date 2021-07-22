@@ -8,7 +8,8 @@ export class BackendService {
 
   constructor(private http:HttpClient) {
   }
-  getBreakfast = () => this.http.get('http://localhost:3000/Desayunos');
+
+  getBreakfast = () => this.http.get<any[]>('http://localhost:3000/Desayunos')
   getHamburger = () => this.http.get('http://localhost:3000/Hamburguesas');
   getDrinks = () => this.http.get('http://localhost:3000/Bebidas');
 }

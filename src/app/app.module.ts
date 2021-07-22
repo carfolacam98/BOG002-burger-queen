@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HamburguerComponent } from './components/hamburguer/hamburguer.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { ProductViewComponent } from './components/shared/product-view/product-view.component';
+import { OrdersComponent } from './components/orders/orders.component';
 
 // comentario
 @NgModule({
@@ -19,7 +20,7 @@ import { ProductViewComponent } from './components/shared/product-view/product-v
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent,
+    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent, OrdersComponent,
   ],
   imports: [
     BrowserModule,

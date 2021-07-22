@@ -13,6 +13,11 @@ const routes: Routes = [
   pathMatch:'full',
   redirectTo:'home'
 },
+{
+  path:'mesas',
+  pathMatch:'full',
+  redirectTo:'mesas/breakfast'
+},
    //preguntar por los children here
   { path: 'home', component: HomeComponent},
   { path: 'mesas', component: MesasInitComponent, children:[
