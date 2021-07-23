@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "bq": "burguer-queen-f2407"
+  },
+  "targets": {
+    "burguer-queen-f2407": {
+      "hosting": {
+        "bq": [
+          "burguer-queen-f2407"
+        ]
+      }
+    }
+  }
+}
