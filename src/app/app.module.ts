@@ -13,7 +13,10 @@ import { HamburguerComponent } from './components/hamburguer/hamburguer.componen
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { ProductViewComponent } from './components/shared/product-view/product-view.component';
 import { OrdersComponent } from './components/orders/orders.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { environment } from 'src/environments/environment';
 // comentario
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { OrdersComponent } from './components/orders/orders.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule, // firestore
+    AngularFireStorageModule // storage
     
   ],
   providers: [],
