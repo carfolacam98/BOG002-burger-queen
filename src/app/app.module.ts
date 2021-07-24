@@ -17,6 +17,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
+import { ClickorderService } from './clickorder.service';
+import { BackendService } from './backend.service';
 // comentario
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { environment } from 'src/environments/environment';
     AngularFireStorageModule // storage
     
   ],
-  providers: [],
+  providers: [ClickorderService,BackendService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { ClickorderService } from 'src/app/clickorder.service';
 @Component({
   selector: 'app-product-view',
   templateUrl: './product-view.component.html',
@@ -10,10 +10,11 @@ export class ProductViewComponent implements OnInit {
   @Input() price:number = 0;
   @Input() img:string = '';
 
-  constructor() { }
+  constructor(private s:ClickorderService) { }
 
   ngOnInit(): void {
   }
-cambiarNombre(){
-  this.title='Hola'}
-}
+  onclick(){
+    this.s.Clickorder(this.title)
+  }}
+
