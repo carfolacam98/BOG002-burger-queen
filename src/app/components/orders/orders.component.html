@@ -12,7 +12,12 @@
                 <p>Producto</p>
                 <p>Costo</p>
             </div>
-            <!-- <hr> -->
-        </div>
+            <hr>
+            <ul>
+                <li class="text" *ngFor="let item of items | async">
+                     {{item.producto}}
+                 </li>
+             </ul>
+         </div>
     </div>
 </form>

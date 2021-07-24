@@ -14,5 +14,6 @@ export class ProductViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+cambiarNombre(){
+  this.title='Hola'}
 }
