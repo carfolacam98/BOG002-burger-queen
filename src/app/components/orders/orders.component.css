@@ -61,3 +61,10 @@ p {
     line-height: 10px;
     margin-top: 8px;
 }
+
+.prueba {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 5px;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from 'src/app/backend.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hamburguer',
@@ -7,16 +8,11 @@ import { BackendService } from 'src/app/backend.service';
   styleUrls: ['./hamburguer.component.css']
 })
 export class HamburguerComponent implements OnInit {
-  hamburger: any = [];
+  hamburger!: Observable<any[]>;
   constructor(private http:BackendService) { }
-
   ngOnInit(): void {
-    this.http.getHamburger().subscribe(response => {
-      console.log(response);
-        this.hamburger = response;
-    })
+    this.hamburger = this.http.getHamburger();
   }
-
 }
 
 

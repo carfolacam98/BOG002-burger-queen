@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from 'src/app/backend.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-drinks',
@@ -7,13 +8,9 @@ import { BackendService } from 'src/app/backend.service';
   styleUrls: ['./drinks.component.css']
 })
 export class DrinksComponent implements OnInit {
-  drink: any = [];
+  drink!: Observable<any[]>;
   constructor(private http:BackendService) { }
-
   ngOnInit(): void {
-    this.http.getDrinks().subscribe(response => {
-      this.drink = response;
-    })
+  this.drink = this.http.getDrinks();
   }
-
 }

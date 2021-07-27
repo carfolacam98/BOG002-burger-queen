@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
+  firebaseConfig: {
     apiKey: "AIzaSyDhNlfmRzveAgC12KOXO4Y7XuUcrXBPHuM",
     authDomain: "burguer-queen-f2407.firebaseapp.com",
     databaseURL: "https://burguer-queen-f2407-default-rtdb.firebaseio.com",

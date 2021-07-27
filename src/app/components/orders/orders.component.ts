@@ -1,23 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import { ClickorderService } from 'src/app/clickorder.service';
+import { ProductServiceService } from 'src/app/product-service.service';
+//Importamos interfaz del producto
+import { Product } from 'src/app/models/product';
+
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
-items:Observable<any[]>
-prueba!:string
-  constructor(db:AngularFirestore,private a:ClickorderService) {
-    this.items=db.collection('Orden1').valueChanges();
-   }
 
-  ngOnInit(): void { 
-    
-    this.a.EventClick
-    .subscribe((data:string)=>this.prueba=data)
+  products: Product[] = [];
+
+  constructor( private s:ProductServiceService) { }
+
+  ngOnInit(): void {
+    this.s.itemsCollection
+    .snapshotChanges()
+    .subscribe(item => {
+    this.products = [];
+    item.forEach(product => {
+      let data = product.payload.doc.data();
+      // let id = product.payload.doc.id;
+      console.log('que es?', data)
+      this.products.push(data as Product);
+    })
+})
   }
-
 }

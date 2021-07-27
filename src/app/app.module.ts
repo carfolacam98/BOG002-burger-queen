@@ -13,13 +13,14 @@ import { HamburguerComponent } from './components/hamburguer/hamburguer.componen
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { ProductViewComponent } from './components/shared/product-view/product-view.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { environment } from 'src/environments/environment';
-import { ClickorderService } from './clickorder.service';
 import { BackendService } from './backend.service';
-// comentario
+import { ProductServiceService } from './product-service.service';
+
+
 @NgModule({
   declarations: [
     AppComponent, 
@@ -32,11 +33,13 @@ import { BackendService } from './backend.service';
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule, // firestore
-    AngularFireStorageModule // storage
-    
+    AngularFirestoreModule,
+    AngularFireStorageModule,
   ],
-  providers: [ClickorderService,BackendService],
+  providers: [
+    BackendService,
+    ProductServiceService,
+  ],
   bootstrap: [AppComponent]
 
 })
