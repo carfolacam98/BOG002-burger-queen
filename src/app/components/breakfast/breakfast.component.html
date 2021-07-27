@@ -1,5 +1,5 @@
 <p>> Desayunos</p>
 <section class="row">
-    <app-product-view *ngFor="let element of breakfast | async ;let i=index" [title]="element.nombre" [price]="element.precio" [img]="element.imagen">
+    <app-product-view *ngFor="let element of breakfast | async ;let i=index" [product]="element">
     </app-product-view>
 </section>

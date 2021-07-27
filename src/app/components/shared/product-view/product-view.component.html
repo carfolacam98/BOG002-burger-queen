@@ -1,12 +1,12 @@
 <div id="card-body">
-    <img src="{{img}}">
+    <img src="{{product?.img}}">
     <div class="grid">
         <div>
-            <p class="card-title">{{title}}</p>
-            <p class="card-precio">${{price}}</p>
+            <p class="card-title">{{product?.name}}</p>
+            <p class="card-precio">${{product?.price}}</p>
         </div>
         <div>
-            <button class="redondo"><p class="add">+</p></button>
+            <button (click)="onClick()" class="redondo"><p class="add">+</p></button>
         </div>
     </div>
 </div>

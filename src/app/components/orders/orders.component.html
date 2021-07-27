@@ -13,6 +13,17 @@
                 <p>Costo</p>
             </div>
             <!-- <hr> -->
+            <!-- aqui se trae el componente de la plantilla del producto -->
+            <div *ngFor="let product of products">
+                <div class="prueba">
+                    <div>
+                        {{product.name}}
+                    </div>
+                    <div>
+                        ${{product.price}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </form>
