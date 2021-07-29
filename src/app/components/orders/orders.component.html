@@ -17,6 +17,11 @@
             <div *ngFor="let product of products">
                 <div class="prueba">
                     <div>
+                        {{product.count}}
+                        <button (click)="delete(product)">BORRAR</button>
+                        <button (click)="increase(product)">+</button>
+                    </div>
+                    <div>
                         {{product.name}}
                     </div>
                     <div>
