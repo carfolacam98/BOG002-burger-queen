@@ -18,9 +18,15 @@ export class ProductServiceService {
     this.items = this.itemsCollection.valueChanges();
   }
   addProduct = (item: Product) => this.itemsCollection.add(item);
+  deleteP = (item: Product) => this.itemsCollection.doc(`${item.id}`).delete();
   incrementProduct = (item: Product) => {
     const increment = firebase.default.firestore.FieldValue.increment(1)
     const itemCount: any = this.itemsCollection.doc(`${item.id}`)
     itemCount.update({ count: increment });
+  }
+  decrementProduct = (item: Product) => {
+    const decrement = firebase.default.firestore.FieldValue.increment(-1)
+    const itemCount: any = this.itemsCollection.doc(`${item.id}`)
+    itemCount.update({ count: decrement });
   }
 }

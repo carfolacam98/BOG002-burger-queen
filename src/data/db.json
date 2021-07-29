@@ -1,12 +1,11 @@
 {
     "Desayunos": [
 
-        { "id": 1, "name": "Sandwich Jamón", "img": "../assets/img/sandwich.png", "price": 10,"count":1 },
-        { "id": 2, "name": "Huevos Gourmet", "img": "../assets/img/egg.png", "price": 3 ,"count":1},
-        { "id": 3, "name": "Pancakes", "img": "../assets/img/pancakes.png", "price": 8,"count":1 },
-        { "id": 4, "name": "Café Americano", "img": "../assets/img/cafe.png", "price": 5,"count":1 },
-        { "id": 5, "name": "Capuccino", "img": "../assets/img/capucino.png", "price": 7,"count":1 }
-
+        {  "name": "Sandwich Jamón", "img": "../assets/img/sandwich.png", "price": 10,"count":1 },
+        {  "name": "Huevos Gourmet", "img": "../assets/img/egg.png", "price": 3 ,"count":1},
+        {  "name": "Pancakes", "img": "../assets/img/pancakes.png", "price": 8,"count":1 },
+        {  "name": "Café Americano", "img": "../assets/img/cafe.png", "price": 5,"count":1 },
+        {  "name": "Capuccino", "img": "../assets/img/capucino.png", "price": 7,"count":1 }
 
     ],
     "Hamburguesas": [

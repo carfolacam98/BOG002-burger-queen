@@ -12,7 +12,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 export class OrdersComponent implements OnInit {
 
   products: Product[] = [];
-   total_count:number=1;
+ 
+  
   constructor( private s:ProductServiceService) { }
 
   ngOnInit(): void {
@@ -29,10 +30,14 @@ export class OrdersComponent implements OnInit {
     })
 })
   };
- 
+  delete(product: Product){
+    this.s.deleteP(product)
+  }
   productCounting(product:Product){
     this.s.incrementProduct(product)
   }
   
-  
+  productDecrease(product:Product){
+    this.s.decrementProduct(product)
+  }
   }

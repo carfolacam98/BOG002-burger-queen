@@ -20,7 +20,7 @@
                     <div class="boton">
                         <button (click) ="productCounting(product)">+</button>
                         <div>{{product.count}}</div>
-                        <button>-</button>
+                        <button (click) ="productDecrease(product)">-</button>
                     </div>
                     <div>
                         {{product.name}}
@@ -28,7 +28,7 @@
                     <div>
                         ${{product.price}}
                     </div>
-                    <button>Eliminar</button>
+                    <button (click) ="delete(product)">Eliminar </button>
                 </div>
             </div>
         </div>
