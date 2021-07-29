@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { HamburguerComponent } from './components/hamburguer/hamburguer.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
-
+import { ExtraComponent } from './components/extra/extra.component';
 const routes: Routes = [
 {
   path:'',
@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'mesas', component: MesasInitComponent, children:[
     { path: 'breakfast', component: BreakfastComponent},
     { path: 'hamburgers', component: HamburguerComponent},
-    { path: 'drinks', component: DrinksComponent}
+    { path: 'drinks', component: DrinksComponent},
+    { path: 'adds', component: ExtraComponent}
   ] },  
   { path: 'cocina', component: CocinaInitComponent},
  

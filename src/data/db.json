@@ -1,29 +1,39 @@
 {
     "Desayunos": [
 
-        { "id": 1, "name": "Sandwich Jamón", "img": "../assets/img/sandwich.png", "price": 10 },
-        { "id": 2, "name": "Huevos Gourmet", "img": "../assets/img/egg.png", "price": 3 },
-        { "id": 3, "name": "Pancakes", "img": "../assets/img/pancakes.png", "price": 8 },
-        { "id": 4, "name": "Café Americano", "img": "../assets/img/cafe.png", "price": 5 },
-        { "id": 5, "name": "Capuccino", "img": "../assets/img/capucino.png", "price": 7 }
+        { "id": 1, "name": "Sandwich Jamón", "img": "../assets/img/sandwich.png", "price": 10,"count":1 },
+        { "id": 2, "name": "Huevos Gourmet", "img": "../assets/img/egg.png", "price": 3 ,"count":1},
+        { "id": 3, "name": "Pancakes", "img": "../assets/img/pancakes.png", "price": 8,"count":1 },
+        { "id": 4, "name": "Café Americano", "img": "../assets/img/cafe.png", "price": 5,"count":1 },
+        { "id": 5, "name": "Capuccino", "img": "../assets/img/capucino.png", "price": 7,"count":1 }
 
 
     ],
     "Hamburguesas": [
 
-        { "id": 6, "name": "Res", "img": "../assets/img/res.png", "price": 10 },
-        { "id": 7, "name": "Pollo", "img": "../assets/img/pollo.png", "price": 10 },
-        { "id": 8, "name": "Vegetariana", "img": "../assets/img/veggie.png", "price": 10 }
+        {  "name": "Res", "img": "../assets/img/res.png", "price": 10,"count":1 },
+        {  "name": "Pollo", "img": "../assets/img/pollo.png", "price": 10,"count":1 },
+        {  "name": "Vegetariana", "img": "../assets/img/veggie.png", "price": 10,"count":1 },
+        {  "name": "Res Doble", "img": "../assets/img/res.png", "price": 15,"count":1 },
+        {  "name": "Pollo Doble", "img": "../assets/img/pollo.png", "price": 15 ,"count":1},
+        {  "name": "Vegetariana Doble", "img": "../assets/img/veggie.png", "price": 15,"count":1 }
 
 
     ],
     "Bebidas": [
 
-        { "id": 9, "name": "Jugos Naturales", "img": "../assets/img/jugo.png", "price": 6 },
-        { "id": 10, "name": "Agua 500ml", "img": "../assets/img/agua5.png", "price": 5 },
-        { "id": 11, "name": "Agua 750ml", "img": "../assets/img/agua7.png", "price": 7 },
-        { "id": 12, "name": "Gaseosa 500ml", "img": "../assets/img/soda.png", "price": 7 },
-        { "id": 13, "name": "Gaseosa 750ml", "img": "../assets/img/soda.png", "price": 10 }
+        { "name": "Jugos Naturales", "img": "../assets/img/jugo.png", "price": 6,"count":1 },
+        {  "name": "Agua 500ml", "img": "../assets/img/agua5.png", "price": 5,"count":1 },
+        {  "name": "Agua 750ml", "img": "../assets/img/agua7.png", "price": 7,"count":1 },
+        {  "name": "Gaseosa 500ml", "img": "../assets/img/soda.png", "price": 7,"count":1 },
+        {  "name": "Gaseosa 750ml", "img": "../assets/img/soda.png", "price": 10,"count":1 }
+
+    ],
+    "Adiciones": [
+
+        {  "name": "Papas fritas", "img": "../assets/img/fries.jpg", "price": 6,"count":1 },
+        {  "name": "Cebollas", "img": "../assets/img/onion.jpg", "price": 5,"count":1 }
+        
 
     ]
 }

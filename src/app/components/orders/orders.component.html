@@ -17,12 +17,18 @@
             <!-- aqui se trae el componente de la plantilla del producto -->
             <div *ngFor="let product of products">
                 <div class="prueba">
+                    <div class="boton">
+                        <button (click) ="productCounting(product)">+</button>
+                        <div>{{product.count}}</div>
+                        <button>-</button>
+                    </div>
                     <div>
                         {{product.name}}
                     </div>
                     <div>
                         ${{product.price}}
                     </div>
+                    <button>Eliminar</button>
                 </div>
             </div>
         </div>

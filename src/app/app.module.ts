@@ -19,6 +19,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { BackendService } from './backend.service';
 import { ProductServiceService } from './product-service.service';
+import { ExtraComponent } from './components/extra/extra.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { ProductServiceService } from './product-service.service';
     AppComponent, 
     CocinaInitComponent,
     MesasInitComponent, 
-    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent, OrdersComponent,
+    HomeComponent, HeaderComponent, NavComponent, BreakfastComponent, HamburguerComponent, DrinksComponent, ProductViewComponent, OrdersComponent, ExtraComponent,
   ],
   imports: [
     BrowserModule,

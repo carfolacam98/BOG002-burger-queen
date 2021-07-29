@@ -5,6 +5,7 @@
 
 .container {
     padding-top: 25px;
+    height: 70%;
 }
 
 .form_styles {
@@ -33,6 +34,7 @@
 
 .form_styles input:hover {
     border-color: #FFD800;
+    
 }
 
 ::placeholder {
@@ -64,7 +66,16 @@ p {
 
 .prueba {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     margin-top: 5px;
+    height: 10%;
+    column-gap: 5%;
+    border: solid ;
+    border-color: #353535;
+    
+}
+.boton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

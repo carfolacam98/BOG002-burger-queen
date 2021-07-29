@@ -12,4 +12,5 @@ export class BackendService {
   getBreakfast = () => this.http.get<any[]>('http://localhost:3000/Desayunos')
   getHamburger = () => this.http.get<any[]>('http://localhost:3000/Hamburguesas');
   getDrinks = () => this.http.get<any[]>('http://localhost:3000/Bebidas');
+  getExtra = () => this.http.get<any[]>(' http://localhost:3000/Adiciones');
 }

@@ -1,0 +1,5 @@
+<p>> Adiciones</p>
+<section class="row">
+    <app-product-view *ngFor="let element of extra | async ;let i=index" [product]="element">
+    </app-product-view>
+</section>
