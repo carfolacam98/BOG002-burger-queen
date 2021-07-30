@@ -1,8 +1,9 @@
-<form class="orders">
+<form (ngSubmit)="agregar()" class="orders">
     <div class="container">
         <div class="form_styles">
             <label for="email">Cliente</label>
-            <input type="text" placeholder="Ingresa un nombre" required/>
+            <input 
+            type="text" placeholder="Ingresa un nombre" [(ngModel)]="item.userName" name="userName" required/>
         </div>
         <div class="form_styles">
             <label for="email">Pedido</label>
@@ -26,11 +27,14 @@
                         {{product.name}}
                     </div>
                     <div>
-                        ${{product.price}}
+                        {{(product.count || 0) * (product.price || 0)}}
                     </div>
                     <button (click) ="delete(product)">Eliminar </button>
                 </div>
+                
             </div>
+            <br>
+            <button type="submit">Enviar</button>
         </div>
     </div>
 </form>

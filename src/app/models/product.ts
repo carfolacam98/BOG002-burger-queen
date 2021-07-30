@@ -4,5 +4,6 @@ export interface Product {
     price?: number;
     img?: string;
     count?: number;
+    userName?:string;
     
 }

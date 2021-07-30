@@ -17,6 +17,7 @@ export class ProductServiceService {
     this.itemsCollection = this.s.collection<Product>('items');
     this.items = this.itemsCollection.valueChanges();
   }
+  addname = () => this.itemsCollection.add(userName);
   addProduct = (item: Product) => this.itemsCollection.add(item);
   deleteP = (item: Product) => this.itemsCollection.doc(`${item.id}`).delete();
   incrementProduct = (item: Product) => {

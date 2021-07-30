@@ -11,18 +11,17 @@ import { ProductServiceService } from 'src/app/product-service.service';
   styleUrls: ['./product-view.component.css']
 })
 export class ProductViewComponent implements OnInit {
-  // @Input() title:string = '';
-  // @Input() price:number = 0;
-  // @Input() img:string = '';
-  // @Input() id:number = 0;
-
-  // Hacemos el input del objeto (interaz)
+  
   @Input() product: Product = {}
   constructor(private s:ProductServiceService) { }
   ngOnInit(): void {
   }
   //Aquí va el metodo que agrega los productos a la collecion en firebase
   onClick(){
-    this.s.addProduct(this.product)
+    if(this.product.userName!=undefined){
+      // this.s.addProduct(this.product.userName)
+    }
+    else{this.s.addProduct(this.product)}
+    
   }
 }

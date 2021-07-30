@@ -12,32 +12,35 @@ import { AngularFirestore } from '@angular/fire/firestore';
 export class OrdersComponent implements OnInit {
 
   products: Product[] = [];
- 
-  
-  constructor( private s:ProductServiceService) { }
+  item:any={userName:''}
+
+  constructor(private s: ProductServiceService) { }
 
   ngOnInit(): void {
     this.s.itemsCollection
-    .snapshotChanges()
-    .subscribe(item => {
-    this.products = [];
-    item.forEach(product => {
-      let data = product.payload.doc.data();
-       let id = product.payload.doc.id;
-      console.log('que es?', id)
-      this.products.push({id, ... data});
-      
-    })
-})
+      .snapshotChanges()
+      .subscribe(item => {
+        this.products = item.map(product => {
+          let id = product.payload.doc.id
+          return ({ id, ...product.payload.doc.data() });
+        })
+      })
   };
-  delete(product: Product){
+
+  delete(product: Product) {
     this.s.deleteP(product)
   }
-  productCounting(product:Product){
+  productCounting(product: Product) {
+
     this.s.incrementProduct(product)
+
   }
-  
-  productDecrease(product:Product){
+
+  productDecrease(product: Product) {
     this.s.decrementProduct(product)
   }
-  }
+ agregar(){
+   this.s.addProduct(this.item)
+   this.item.name=""
+ }
+}
