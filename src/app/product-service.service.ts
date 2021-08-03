@@ -23,7 +23,8 @@ export class ProductServiceService {
   // 'DPjkpt0NNildJQLH0pbo').get
   deleteP = (item: Product) => this.itemsCollection.doc(`${item.id}`).delete();
 
-
+  // deleteOther=(item: Product) => this.s.collection('prueba').doc(
+  //   'DPjkpt0NNildJQLH0pbo').get.arguments
 
   incrementProduct = (item: Product) => {
     const increment = firebase.default.firestore.FieldValue.increment(1)

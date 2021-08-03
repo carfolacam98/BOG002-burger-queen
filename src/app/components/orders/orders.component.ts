@@ -3,7 +3,7 @@ import { ProductServiceService } from 'src/app/product-service.service';
 //Importamos interfaz del producto
 import { Product } from 'src/app/models/product';
 import { FormBuilder,FormGroup, Validators,FormControl } from '@angular/forms';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore, fromDocRef } from '@angular/fire/firestore';
 import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-orders',
@@ -13,8 +13,8 @@ import * as firebase from 'firebase/app';
 export class OrdersComponent implements OnInit {
 
   products: Product[] = [];
-  name:any={userName:''};
-  objectProduct=[];
+  // name:any={userName:''};
+  // objectProduct=[];
   // orderForm:FormGroup;
 
 //  each!:number
@@ -30,53 +30,44 @@ orderForm=this.fb.group({
 })
   ngOnInit(): void {
     this.main();
-    this.guardarOrder()
-    // console.log(this.orderForm.value);
     // this.guardarOrder()
-    // this.change()
-    // this.orderForm=this.fb.group({
-    //  ['',Validators.required],
-     
-    // })
+    
    
   };
   submit(){
     this.db.collection('prueba').doc('DPjkpt0NNildJQLH0pbo').update({
-    
-      cliente: this.orderForm.value})
+      cliente: this.orderForm.value});
   }
+  
+  
   change(arrayOrder:any){
     
-    
+    //console.log(this.db.collection('prueba').doc('DPjkpt0NNildJQLH0pbo').get().forEach((element: any) => {console.log(element)}))
   //const newProduct = {name: 'productName', price: 0, cart: true, supermarket: 'Ninguno', bought: false};
   arrayOrder.forEach((element: any) => {
       this.db.collection('prueba').doc('DPjkpt0NNildJQLH0pbo').update({
         producto: firebase.default.firestore.FieldValue.arrayUnion(element)
       })
+
     });
     // this.orderForm.reset();
   
   }
   
- guardarOrder(){
+//  guardarOrder(){
   
-    this.db.collectionGroup('prueba'), (ref: { where: (arg0: string, arg1: string, arg2: any) => any; }) => console.log(ref.where('producto', '!=', undefined))}
+//     this.db.collectionGroup('prueba'), (ref: { where: (arg0: string, arg1: string, arg2: any) => any; }) => console.log(ref.where('producto', '!=', undefined))}
     
     
  
   
 //       needed(){
-//         this.s.itemsCollection
-//         .snapshotChanges()
-//         .subscribe(item => {
-//           this.Local=item.map(product => {
-//             let id = product.payload.doc.id;
-//             let data=product.payload.doc.data();
-//              ({ id, ... data });
-//              return data
-//           })
-//         })
-//        }    
+//         this.db.collection('prueba')
+//         .snapshotChanges().subscribe(item => {
+//            item.map(product => {
+//             product.payload.doc.data()})})}
+          
+        
     main(){
       this.s.itemsCollection
       .snapshotChanges()
@@ -93,6 +84,7 @@ orderForm=this.fb.group({
     
       delete(product: Product) {
         this.s.deleteP(product)
+       
       }
       productCounting(product: Product) {
     
