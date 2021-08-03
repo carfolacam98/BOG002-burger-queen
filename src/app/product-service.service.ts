@@ -12,14 +12,19 @@ export class ProductServiceService {
 
   itemsCollection: AngularFirestoreCollection<Product>;
   items: Observable<Product[]>;
-
+  
   constructor( private s:AngularFirestore ) {
     this.itemsCollection = this.s.collection<Product>('items');
     this.items = this.itemsCollection.valueChanges();
   }
-  addname = () => this.itemsCollection.add(userName);
+  // addname = () => this.itemsCollection.add(userName);
   addProduct = (item: Product) => this.itemsCollection.add(item);
+  // addColections=()=>this.s.collection('prueba').doc(
+  // 'DPjkpt0NNildJQLH0pbo').get
   deleteP = (item: Product) => this.itemsCollection.doc(`${item.id}`).delete();
+
+
+
   incrementProduct = (item: Product) => {
     const increment = firebase.default.firestore.FieldValue.increment(1)
     const itemCount: any = this.itemsCollection.doc(`${item.id}`)

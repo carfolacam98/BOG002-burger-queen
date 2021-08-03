@@ -20,8 +20,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { BackendService } from './backend.service';
 import { ProductServiceService } from './product-service.service';
 import { ExtraComponent } from './components/extra/extra.component';
-import { FormsModule } from '@angular/forms';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent, 
@@ -36,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireStorageModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     BackendService,
